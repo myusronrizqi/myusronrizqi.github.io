@@ -1,0 +1,58 @@
+#z_block, #s_block, #t_block {
+  width: 36px;
+  height: 24px;
+}
+
+#l_block, #j_block {
+  width: 24px;
+  height: 32px;
+}
+
+#i_block {
+  width: 12px;
+  height: 40px;
+}
+
+#o_block {
+  width: 24px;
+  height: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #fff;
+}
+
+td {
+  text-align: center;
+}
+
+.about-tetromino {
+  width: 40%;
+  height: 40%;
+}
+
+.tetris-logo {
+  width: 24px; 
+  height: 24px;
+}
+
+.tetris-games {
+  border: 0px solid #fff;
+}
+
+.tetris-link {
+  transition: 0.2s;
+  color: rgb(200, 255, 91);
+}
+
+.profile-logo:hover {
+  transition: 0.2s;
+  background-color: rgb(200, 255, 91);
+}
+
+.profile-pict {
+  width: 15%;
+}

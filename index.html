@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tetris</title>
+    <link rel="icon" href="img/jstris_logo.webp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/w3.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="w3-container" style="width: 100%; padding: 0; margin: 0" >
+      <img src="img/header.webp" alt="Tetris Background" style="width: 100%;" />
+    </div>
+    <div class="w3-bar w3-indigo" style="width: 100%;" >
+      <button class="w3-bar-item w3-button" onclick="openTab('home')">Home</button>
+      <button class="w3-bar-item w3-button" onclick="openTab('about')">About</button>
+      <button class="w3-bar-item w3-button" onclick="openTab('history')">History</button>
+      <div class="w3-dropdown-hover">
+        <button class="w3-button" onclick="openTab('play')">Play Tetris</button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <button class="w3-bar-item w3-button">
+              <a href="https://jstris.jezevec10.com/" target="_blank" style="text-decoration:none">
+                <img src="img/jstris_logo.webp" alt="Jstris Logo" class="tetris-logo">
+                Jstris
+              </a>
+            </button>
+            <button class="w3-bar-item w3-button">
+              <a href="https://tetr.io/" target="_blank" style="text-decoration:none">
+                <img src="img/tetr_logo.webp" alt="TETR.IO Logo" class="tetris-logo">  
+                TETR.IO
+              </a>
+            </button>
+            <button class="w3-bar-item w3-button">
+              <a href="https://www.tetriseffect.game/" target="_blank" style="text-decoration:none">
+                <img src="img/tetris_effect_logo.webp" alt="Tetris Effect Logo" class="tetris-logo">
+                TETRIS® EFFECT: CONNECTED
+              </a>
+            </button>
+            <button class="w3-bar-item w3-button">
+              <a href="https://store.steampowered.com/app/546050/Puyo_PuyoTetris/" target="_blank" style="text-decoration:none">
+                <img src="img/puyo_puyo_logo.webp" alt="Puyo Puyo Tetris Logo" class="tetris-logo">
+                Puyo Puyo™ Tetris®
+              </a>
+            </button>
+          </div>
+      </div>
+      <button class="w3-bar-item w3-button w3-right" onclick="openTab('profile')">Profile</button>
+    </div>
+    <div class="w3-container w3-dark-blue tab" id="home">
+      <center>
+      <p>
+          <h1><img src="img/z_block.webp" class="w3-animate-top" id="z_block"> <b><u>Welcome</u></b> <img src="img/j_block.webp" class="w3-animate-bottom" id="j_block"></h1>
+      </p>
+      <br>
+      <p>
+        <img src="img/l_block.webp" class="w3-animate-zoom">
+        <img src="img/o_block.webp" class="w3-animate-zoom" style="animation-delay: 0.1s;">
+        <img src="img/l_block.webp" class="w3-animate-zoom" style="animation-delay: 0.2s;">
+      </p>
+      <p>
+        <img src="img/s_block.webp" class="w3-animate-zoom">
+        <img src="img/i_block.webp" class="w3-animate-zoom" style="animation-delay: 0.1s;">
+        <img src="img/z_block.webp" class="w3-animate-zoom" style="animation-delay: 0.2s;">
+      </p>
+      <p>
+        <img src="img/t_block.webp" class="w3-animate-zoom">
+        <img src="img/o_block.webp" class="w3-animate-zoom">
+        <img src="img/o_block.webp" class="w3-animate-zoom" style="animation-delay: 0.1s;">
+        <img src="img/l_block.webp" class="w3-animate-zoom" style="animation-delay: 0.2s;">
+      </p>
+      </center>
+    </div>
+    <div class="w3-container w3-dark-blue tab" id="about" style="display: none">
+      <center>
+        <p>
+          <h1><img src="img/l_block.webp" class="w3-animate-zoom" id="l_block"> <b><u>About</u></b> <img src="img/o_block.webp" class="w3-animate-zoom" id="o_block"></h1>
+        </p>
+        <h4>
+          <p class="w3-animate-bottom">
+            Tetris is primarily composed of a field of play in which pieces of different geometric forms, called "tetrominoes", <br>
+            descend from the top of the field. During this descent, the player can move the pieces laterally and rotate them <br>
+            until they touch the bottom of the field or land on a piece that had been placed before it. The player can neither <br>
+            slow down the falling pieces nor stop them, but can accelerate them, in most versions. The objective of the game is to <br>
+            use the pieces to create as many complete horizontal lines of blocks as possible. When a line is completed, it disappears, <br>
+            and the blocks placed above fall one rank. Completing lines grants points, and accumulating a certain number of points or <br>
+            cleared lines moves the player up a level, which increases the number of points granted per completed line<br>
+          </p>
+          <p class="w3-animate-bottom" style="animation-delay: 0.1s;">
+            In most versions, the speed of the falling pieces increases with each level, leaving the player with less time to think <br>
+            about the placement. The player can clear multiple lines at once, which can earn bonus points in some versions.<br>
+            It is possible to complete up to four lines simultaneously with the use of the I-shaped tetromino; this move is called a "Tetris", <br>
+            and is the basis of the game's title.<br>
+          </p>
+          <p class="w3-animate-bottom" style="animation-delay: 0.2s;">
+            If the player cannot make the blocks disappear quickly enough, the field will start to fill; when the pieces reach the top of <br>
+            the field and prevent the arrival of additional pieces, the game ends. At the end of each game, the player receives a score <br>
+            based on the number of lines that have been completed. Theoretically, the game never ends with the player's victory. <br>
+            The player can complete only as many lines as possible before an inevitable loss.<br>
+          </p>
+          <p class="w3-animate-bottom" style="animation-delay: 0.3s;">
+            Since 1996, the Tetris Company has internally defined specifications and guidelines to which publishers must adhere <br>
+            to be granted a license to Tetris. The contents of these guidelines establish elements such as the correspondence <br>
+            of buttons and actions, the size of the field of play, and the system of rotation.<br>
+          </p>
+        </h4>
+        <p>
+          <h2><b><u>Tetrominoes</u></b></h2>
+          <table class="about-tetromino">
+            <tr>
+              <td><img src="img/l_block.webp" class="w3-animate-zoom" id="l_block"></td>
+              <td class="w3-animate-zoom">L Block</td>
+              <td><img src="img/j_block.webp" class="w3-animate-zoom" id="j_block" style="animation-delay: 0.1s;"></td>
+              <td class="w3-animate-zoom" style="animation-delay: 0.1s;">J Block</td>
+              <td><img src="img/z_block.webp" class="w3-animate-zoom" id="z_block" style="animation-delay: 0.2s;"></td>
+              <td class="w3-animate-zoom" style="animation-delay: 0.2s;">Z Block</td>
+              <td><img src="img/s_block.webp" class="w3-animate-zoom" id="s_block" style="animation-delay: 0.3s;"></td>
+              <td class="w3-animate-zoom" style="animation-delay: 0.3s;">S Block</td>
+            </tr>
+            <tr>
+              <td><img src="img/o_block.webp" class="w3-animate-zoom" id="o_block" style="animation-delay: 0.4s;"></td>
+              <td class="w3-animate-zoom" style="animation-delay: 0.4s;">O Block</td>
+              <td><img src="img/i_block.webp" class="w3-animate-zoom" id="i_block" style="animation-delay: 0.5s;"></td>
+              <td class="w3-animate-zoom" style="animation-delay: 0.5s;">I Block</td>
+              <td><img src="img/t_block.webp" class="w3-animate-zoom" id="t_block" style="animation-delay: 0.6s;"></td>
+              <td class="w3-animate-zoom" style="animation-delay: 0.6s;">T Block</td>
+            </tr>
+          </table>
+        </p>
+      </center>
+    </div>
+    <div class="w3-container w3-dark-blue tab" id="history" style="display: none">
+      <center>
+        <p>
+          <h1><img src="img/s_block.webp" class="w3-animate-left" id="s_block"> <b><u>History</u></b> <img src="img/j_block.webp" class="w3-animate-right" id="j_block"></h1>
+        </p>
+
+        <h4>
+          <p class="w3-animate-opacity">
+            In 1979, Alexey Pajitnov joined the Computer Center of the Soviet Academy of Sciences as a speech <br>
+            recognition researcher. While he was tasked with testing the capabilities of new hardware, his ambition <br>
+            was to use computers to make people happy. Pajitnov developed several puzzle games on the institute's <br>
+            computer, an Electronika 60, a scarce resource at the time due in part to CoCom. For Pajitnov,<br>
+            "games allow people to get to know each other better and act as revealers of things you might not normally notice, <br>
+            such as their way of thinking".<br>
+          </p>
+          <p class="w3-animate-opacity" style="animation-delay: 0.1s;">
+            In 1984, while trying to recreate a favorite puzzle game from his childhood featuring pentominoes, <br>
+            Pajitnov imagined a game consisting of a descent of random pieces that the player would turn to fill rows. <br>
+            Pajitnov felt that the game would be needlessly complicated with twelve different shape variations, so he scaled <br>
+            the concept down to tetrominoes, of which there are seven variants. Pajitnov titled the game Tetris, a word created <br>
+            from a combination of "tetra" (meaning "four") and his favorite sport, "tennis".<br>
+          </p>
+          <p class="w3-animate-opacity" style="animation-delay: 0.2s;">
+            Because the Electronika 60 had no graphical interface, Pajitnov modelled the field and pieces using spaces and<br>
+            brackets (45 lines of 80 ASCII characters). Realizing that completed lines filled the screen quickly, <br>
+            Pajitnov decided to delete them, creating a key part of Tetris gameplay. This early version of Tetris had no scoring<br>
+            system and no levels, but its addictive quality distinguished it from the other puzzle games Pajitnov had created. <br>
+            Pajitnov wrote the game using Pascal for the RT-11 operating system on the Electronika 60.<br>
+          </p>
+          <p class="w3-animate-opacity" style="animation-delay: 0.3s;">
+            Pajitnov had completed the first playable version of Tetris c. 1985. Pajitnov presented Tetris to his colleagues, <br>
+            who quickly became addicted to it. It permeated the offices within the Academy of Sciences, and within a few weeks <br>
+            it reached every Moscow institute with a computer. A friend of Pajitnov, Vladimir Pokhilko, who requested the game <br>
+            for the Moscow Medical Institute, saw people stop working to play Tetris. Pokhilko eventually banned the game from <br>
+            the Medical Institute to restore productivity.<br>
+          </p>
+          <p class="w3-animate-opacity" style="animation-delay: 0.4s;">
+            Pajitnov sought to adapt Tetris to the IBM Personal Computer, which had a higher quality display than the Electronika 60.<br>
+            Pajitnov recruited Vadim Gerasimov, a 16-year-old high school student who was known for his computer skills. <br>
+            Pajitnov had met Gerasimov before through a mutual acquaintance, and they had worked together on previous games. <br>
+            Gerasimov adapted Tetris to the IBM PC over the course of a few weeks, incorporating color and a scoreboard. <br>
+            The PC port was written with Turbo Pascal.<br>
+          </p>
+        </h4>
+          
+      </center>
+    </div>
+    <div class="w3-container w3-dark-blue tab" id="play" style="display: none">
+      <center>
+        <p>
+          <h1><img src="img/o_block.webp" class="w3-animate-fading" id="o_block"> <b><u>Tetris</u></b> <img src="img/l_block.webp" class="w3-spin" id="l_block"></h1>
+        </p>
+        <p>
+          <table border="1" class="tetris-games w3-animate-left">
+            <tr>
+              <td>Jstris</td>
+              <td rowspan="2">
+                A simple online multiplayer block game. Jstris is known for its fast gameplay <br>
+                and is attracting talented players from all around the world. This guide will <br>
+                introduce you to the basic features of the game. Jstris is a simple online <br>
+                multiplayer block game built in Javascript, HTML5 and Python (server).<br>
+                <br>
+                <a href="https://jstris.jezevec10.com/" target="_blank" class="tetris-link">Play Jstris</a>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="img/jstris_logo.webp" alt="Jstris Logo" style="width: 102px;"></td>
+            </tr>
+          </table>
+          <br>
+          <table border="1" class="tetris-games w3-animate-left" style="animation-delay: 0.1s;">
+            <tr>
+              <td>TETR.IO</td>
+              <td rowspan="2">
+                TETR.IO is a free-to-play online multiplayer and single player game developed by osk. <br>
+                Players can play against friends and foes all over the world and claim a spot on the <br>
+                leaderboards, found in the TETRA CHANNEL. It is referred to as a free-to-win, modern <br>
+                yet familiar online stacker game in the same genre as Tetris.<br>
+                <br>
+                <a href="https://tetr.io/" target="_blank" class="tetris-link">Play TETR.IO</a>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="img/tetr_logo.webp" alt="TETR.IO Logo" style="width: 102px;"></td>
+            </tr>
+          </table>
+          <br>
+
+          <table border="1" class="tetris-games w3-animate-left" style="animation-delay: 0.2s;">
+            <tr>
+              <td>TETRIS® EFFECT: CONNECTED</td>
+              <td rowspan="2">
+                Tetris® Effect: Connected is Tetris like you've never seen it, or heard it, or<br>
+                felt it before—an incredibly addictive, unique, and breathtakingly gorgeous reinvention<br>
+                of one of the most popular puzzle games of all time, from the people who brought<br>
+                you the award-winning Rez Infinite and legendary puzzle game Lumines.<br>
+                <br>
+                <a href="https://www.tetriseffect.game/" target="_blank" class="tetris-link">Play TETRIS® EFFECT: CONNECTED</a>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="img/tetris_effect_logo.webp" alt="Tetris Effect Logo" style="width: 150px;"></td>
+            </tr>
+          </table>
+          <br>
+          <table border="1" class="tetris-games w3-animate-left" style="animation-delay: 0.3s;">
+            <tr>
+              <td>Puyo Puyo™ Tetris®</td>
+              <td rowspan="2">
+                Puyo Puyo Tetris (ぷよぷよテトリス, Puyopuyo Tetorisu) is a 2014 puzzle video game<br>
+                developed by Sonic Team and published by Sega. The game is a crossover between the<br>
+                Puyo Puyo series and the Tetris franchise, and features various gameplay modes<br>
+                incorporating both aspects. The game includes characters modeled and named after <br>
+                seven Tetrominos, which are different puzzle pieces each made of four blocks.<br>
+                <br>
+                <a href="https://store.steampowered.com/app/546050/Puyo_PuyoTetris/" target="_blank" class="tetris-link">Play Puyo Puyo™ Tetris®</a>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="img/puyo_puyo_logo.webp" alt="Puyo Puyo Tetris Logo" style="width: 200px"></td>
+            </tr>
+          </table>
+        </p>
+      </center>
+    </div>
+    <div class="w3-container w3-dark-blue tab" id="profile" style="display: none">
+      <center>
+        <p>
+          <h1><img src="img/s_block.webp" class="w3-animate-top" id="s_block"> <b><u>Profile</u></b> <img src="img/z_block.webp" class="w3-animate-top" id="z_block"></h1>
+        </p>
+        <p>
+          <img src="img/profile_pict.webp" class="w3-round-xlarge w3-animate-zoom profile-pict" alt="Muhamamd Yusron Rizqi Adhie Putra">
+        </p>
+        <p class="w3-animate-bottom">
+          Muhammad Yusron Rizqi Adhie Putra<br>
+          10123227<br>
+          IF-6<br>
+        </p>
+        <p>
+          <div class="profile-contact">
+            <h4 class="w3-animate-left"><b><u>Contact</u></b></h4>
+            <table class="w3-animate-left">
+              <tr>
+                <td>
+                  <a href="http://www.instagram.com/yusron.rizqi0001/" target="_blank">
+                    <img src="img/instagram_logo.webp" alt="Instagram Logo" class="w3-round-large profile-logo">
+                  </a>
+                </td>
+                <td>
+                  <a href="http://github.com/myusronrizqi" target="_blank">
+                    <img src="img/github_logo.webp" alt="Github Logo" class="w3-circle profile-logo">
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="w3-animate-left profile-tetris">
+            <h4><b><u>Tetris Profile</u></b></h4>
+            <a href="https://jstris.jezevec10.com/u/SquareEngine" target="_blank" class="tetris-link">
+              <img src="img/jstris_logo.webp" alt="Jstris Logo" class="tetris-logo"> Jstris
+            </a>
+            <a href="https://ch.tetr.io/u/sqengine" target="_blank" class="tetris-link">
+              <img src="img/tetr_logo.webp" alt="TETR.IO Logo" class="tetris-logo"> TETR.IO</a>
+          </div>
+        </p>
+      </center>
+    </div>
+  </body>
+</html>
